@@ -1,0 +1,112 @@
+li {
+    list-style: none;
+    font-size: 250%;
+    display: inline;
+    cursor: pointer;
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+
+.number {
+    margin: 0;
+    position: absolute;
+    top: 17px;
+    left: 38%;
+    font-size: 200%;
+    display: none;
+}
+
+.navigation {
+    z-index: 100;
+    margin: auto;
+    background: white;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1600px;
+    border-bottom: 1px solid darkred;
+    height: 70px;
+    transition: .5s;
+}
+
+.nav-show {
+    transform: translateY(0);
+}
+
+.nav-hide {
+    transform: translateY(-100%);
+}
+
+.list {
+    padding: 0;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+li:hover,
+li:active {
+    border-bottom: 2px solid red;
+    transition: .5s;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: .5s;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(140%);
+}
+
+@media (max-width: 1250px) {
+    .list {
+        display: none;
+    }
+    .icon {
+        display: inherit;
+    }
+    li {
+        display: block;
+        margin: 40px 10px;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .number {
+        display: inherit;
+    }
+}

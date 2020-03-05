@@ -1,0 +1,85 @@
+.contact-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/food.jpg') no-repeat fixed center;
+    background-size: 100%;
+    color: white;
+}
+
+.contact {
+    padding: 20px 60px;
+}
+
+button {
+    height: 80px;
+    width: 160px;
+    font-family: inherit;
+    font-size: 300%;
+    box-shadow: 1px 1px 3px black;
+    background: linear-gradient(black, darkred, black);
+    color: white;
+    margin: 20px 100px 40px 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+iframe {
+    height: 300px;
+    width: 400px;
+    margin: 40px 0;
+}
+
+label {
+    font-size: 250%;
+}
+
+input,
+textarea {
+    display: block;
+    margin: 0 auto 20px auto;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input {
+    width: 280px;
+    height: 40px;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+}
+
+@media (max-width: 1000px) {
+    .contact-page {
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-page {
+        background-size: 200%;
+    }
+}
+
+@media (max-width: 450px) {
+    textarea {
+        width: 280px;
+        height: 100px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+    .contact {
+        padding: 20px 40px;
+    }
+
+    .contact-page {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    }
+}

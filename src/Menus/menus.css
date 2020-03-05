@@ -1,0 +1,56 @@
+.menus {
+    background: lightgray;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    height: 360px;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+.lunch,
+.dinner{
+    position: relative;
+    color: white;
+    top: unset;
+    left: unset;
+    right: unset;
+    margin: 40px auto;
+    padding: 10px;
+    border: 2px solid darkred;
+    box-shadow: 2px 2px 5px black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/food4.jpeg");
+    max-width: 800px;
+}
+
+.dinner:hover,
+.lunch:hover {
+    opacity: .8;
+}
+
+.food-images {
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.food-images img{
+    height: 250px;
+    width: 20%;
+    filter: brightness(40%);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.food-images img:hover {
+    filter: brightness(100%);
+    transition: .5s;
+}
+
+@media (max-width: 800px) {
+    .food-images {
+        display: none;
+    }
+}
